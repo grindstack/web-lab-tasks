@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div>
+        <h1 id="app-title">To-Do List</h1>
+        <p class="lead">Add, edit, complete and remove tasks.</p>
+      </div>
+      <div class="count" id="todo-count" aria-live="polite">0 items</div>
+    </header>
+
+    <section>
+      <div class="input-row">
+        <input id="new-todo" type="text" placeholder="Add a new task" />
+        <button id="add-btn" class="btn">Add</button>
+      </div>
+    </section>
+
+    <ul id="todo-list" class="todo-list"></ul>
+    <footer class="hint"></footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
