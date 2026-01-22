@@ -1,0 +1,117 @@
+/* --------------------------------------------------
+   CYBERPUNK NEON UI ✦
+-------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(circle at center, #0d0d17, #020204 70%);
+  margin: 0;
+  padding: 40px;
+  color: #b9c1ff;
+  text-shadow: 0 0 4px rgba(160, 160, 255, 0.4);
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  color: #8ab4ff;
+  text-shadow: 0 0 12px #4f7bff;
+}
+
+/* --------------------------------------------------
+   Controls Panel
+-------------------------------------------------- */
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 30px;
+  margin: 0 auto 40px;
+  border-radius: 18px;
+  background: rgba(15, 20, 40, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(80, 110, 255, 0.4);
+
+  box-shadow:
+    0 0 20px rgba(90, 110, 255, 0.3),
+    0 0 60px rgba(60, 80, 255, 0.2);
+  transition: 0.3s ease;
+}
+
+.controls label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #9fb3ff;
+  font-family: "Orbitron";
+}
+
+.controls input[type="color"],
+.controls input[type="range"] {
+  cursor: pointer;
+}
+
+/* Neon buttons */
+.controls button {
+  font-family: "Orbitron";
+  background: linear-gradient(135deg, #303cff, #7b2cff);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-shadow: 0 0 6px #a971ff;
+  box-shadow: 0 0 10px #5a2fff, 0 0 25px #5a2fff;
+  transition: 0.15s ease;
+}
+
+.controls button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px #5a2fff, 0 0 30px #7900ff;
+}
+
+/* --------------------------------------------------
+   Canvas (glowing frame)
+-------------------------------------------------- */
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  border-radius: 14px;
+  background: #0b0d14;
+  border: 2px solid rgba(100, 130, 255, 0.5);
+
+  box-shadow:
+    0 0 25px rgba(70, 90, 255, 0.45),
+    0 0 80px rgba(100, 50, 255, 0.35);
+}
+
+canvas:hover {
+  box-shadow:
+    0 0 40px rgba(90, 110, 255, 0.7),
+    0 0 100px rgba(120, 60, 255, 0.5);
+  transform: scale(1.01);
+}
+
+hr {
+  border: none;
+  height: 2px;
+  margin: 50px auto;
+  width: 70%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #6d52ff,
+    #e03bff,
+    #6d52ff,
+    transparent
+  );
+}

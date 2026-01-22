@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lab 11 – Canvas & SVG</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Canvas Drawing</h1>
+
+  <!-- Drawing Controls -->
+  <div class="controls">
+    <label>Brush Color:
+      <input type="color" id="colorPicker" value="#000000">
+    </label>
+
+    <label>Brush Size:
+      <input type="range" id="brushSize" min="2" max="30" value="5">
+    </label>
+
+    <button id="clearBtn">Clear</button>
+    <button id="saveBtn">Save as Image</button>
+  </div>
+
+  <!-- Canvas -->
+  <canvas id="drawingCanvas" width="800" height="500"></canvas>
+
+  <hr style="margin: 40px 0">
+
+  <h1>SVG Animation</h1>
+
+  <!-- SVG Animation -->
+  <object data="animation.svg" type="image/svg+xml" width="2000"></object>
+
+  <script src="drawing.js"></script>
+</body>
+</html>
