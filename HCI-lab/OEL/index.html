@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+
+    <div class="card" id="cardBox">
+        <h2>Student Registration Card</h2>
+
+        <label>Full Name</label>
+        <input type="text" value="Fatima Naveed" disabled>
+
+        <label>Roll Number</label>
+        <input type="text" id="rollInput" placeholder="Enter Roll Number">
+
+        <label>Department</label>
+        <input type="text" value="Computer Science" disabled>
+
+        <button class="btn" onclick="checkRollNumber()">Check Roll Number</button>
+        <button class="btn mode" onclick="toggleMode()">Switch Mode</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

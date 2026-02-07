@@ -1,0 +1,39 @@
+body{
+    padding: 10px;
+    font-family: Arial;
+}
+table{
+    border-color: white;
+}
+.title{
+    background-color: #008DB8;
+    color: white;
+}
+table th{
+    padding: 10px;
+}
+table td{
+    padding: 12px;
+    text-align: center;
+    border-color: white;
+    font-size: 12px;
+
+}
+.header, .days{
+    background-color: #3C8DBC;
+    color: white;
+}
+.lecture{
+    background-color: aliceblue;
+}
+.freeslot{
+    border-color: aliceblue;
+}
+
+p{
+    color: #FF991E;
+}
+span{
+    color: #0033C9
+}
+

@@ -1,0 +1,109 @@
+/* Light mode */
+body.light {
+    background-color: #f5f5f5;
+    color: #222;
+}
+body.light.card{
+     background: #000000;
+    color: white;
+}
+
+/* Dark mode */
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+/* Card styling */
+.card {
+    width: 400px;
+    padding: 30px;
+    margin: 60px auto;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+body.dark .card {
+    background: white;
+    color: black;
+}
+
+/* Headings */
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #222;
+    transition: border 0.3s, background 0.3s;
+}
+
+input:focus {
+    border-color: #4285f4;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Disabled inputs: lighter style */
+input:disabled {
+    background: #e6e6e6;
+    color: #555;
+}
+
+/* Dark mode input overrides */
+body.dark input {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark input:disabled {
+    background: #3a3a3a;
+    color: white;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    background: green;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #2c6cd1;
+}
+
+/* Mode toggle button */
+.btn.mode {
+    background: #6c6c6c;
+}
+
+.btn.mode:hover {
+    background: #515151;
+}

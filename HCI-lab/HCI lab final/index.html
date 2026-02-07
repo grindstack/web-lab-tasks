@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>University Course Registration</h1>
+        </header>
+
+        <main class="main-content">
+            <form id="registrationForm">
+                <section class="form-section">
+                    <h2>Student Information</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="studentId">Student ID *</label>
+                            <input type="text" id="studentId" placeholder="e.g., Fa-23-bscs-265" required>
+                            <span class="error" id="studentIdError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" placeholder="e.g., Fatima Naveed" required>
+                            <span class="error" id="fullNameError"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" placeholder="e.g., fatima@lgu.edu.pk" required>
+                            <span class="error" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" placeholder="e.g., 0300-1234567" required>
+                            <span class="error" id="phoneError"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <h2>Select Courses (Choose 3-6)</h2>
+                    <span class="error" id="courseError"></span>
+                    <div class="courses-grid" id="coursesGrid">
+                    </div>
+                    <div class="summary">
+                        Selected: <span id="selectedCount">0</span> | 
+                        Credits: <span id="totalCredits">0</span>
+                    </div>
+                </section>
+
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+            <div id="successMessage" class="success-message">
+                <h2>✓ Registration Successful!</h2>
+                <p>Your course registration has been confirmed.</p>
+                <button onclick="location.reload()" class="submit-btn">New Registration</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 University Portal. Contact: registrar@university.edu.pk</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

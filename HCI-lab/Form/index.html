@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="container">
+      <h2>Student Information</h2>
+      <form id="studentForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter name" required />
+        <label for="age">Age</label>
+        <input id="age" name="age" type="number" placeholder="Enter age" required />
+        <label for="marks">Marks</label>
+        <input id="marks" name="marks" type="number" placeholder="0 - 100" required />
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <div id="resultCard" class="result-card" aria-hidden="true">
+        <button id="closeCard" class="close-btn" aria-label="Close result"></button>
+        <h3>Student Result</h3>
+        <p><strong>Name:</strong> <span id="resName"></span></p>
+        <p><strong>Age:</strong> <span id="resAge"></span></p>
+        <p><strong>Marks:</strong> <span id="resMarks"></span></p>
+        <p><strong>Grade:</strong> <span id="resGrade"></span></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body{
+  background-image: url(images/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+h1{
+  font-family: "Share Tech", sans-serif;
+  font-size: 40px;
+  letter-spacing: 4px;
+  color: #ccc;
+  text-shadow: 0 0 10px #4F7B58, 0 0 20px #2ECC71;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.card{
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  gap: 30px;
+}
+
+.card1, .card2 {
+  background-color: #F0FFF0;
+  width: 500px;  
+  height: auto;           
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left; 
+  padding: 15px;         
+  box-sizing: border-box;
+  box-shadow: 5px 5px 15px #4A5D23;
+}
+
+.card1 img, .card2 img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-family: "Share Tech", sans-serif;
+  font-size: 25px;          
+  font-weight: bold;
+  color: #4A5D23;
+  margin-bottom: 8px;
+}
+
+.bio {
+  font-family: "Share Tech", sans-serif;
+  font-size: 20px;          
+  color: #4A5D23;
+}
